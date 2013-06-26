@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username
   validates_presence_of :username
 
-  include Accounts:IsAUser
+  include Accounts::IsAUser
 
   # Accounts::IsAUser needs class to respond_to account_name
   def account_name
