@@ -2,3 +2,8 @@
 
 Para facilitar la creacion de módulos para probar cosas y demás.
 
+== USAGE
+
+after cloning this repo run
+
+  cp .env .env.example
