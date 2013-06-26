@@ -10,6 +10,10 @@ class ApplicationController < ActionController::Base
   before_filter :set_timezone
   before_filter :set_locale
 
+  def home
+    render text: 'welcome home'
+  end
+
   private
 
   def set_locale
