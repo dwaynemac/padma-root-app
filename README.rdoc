@@ -7,20 +7,20 @@ Para facilitar la creacion de módulos para probar cosas y demás.
 after cloning this repo run
 
   git clone git@github.com:dwaynemac/padma-root-app.git
+
+  mv padma-root-app your-app-name
+  cd your-app-name
+
   rm -rf .git
   git init .
   git add .
   git commit -am "cloned padma-root-app"
-
-  mv padma-root-app your-app-name
-  cd your-app-name
 
   find ./* -type f -exec sed -i 's/PadmaRootApp/YourAppName/g' {} \;
   find ./* -type f -exec sed -i 's/padma-root-app/your-app-name/g' {} \;
 
   git commit -am "renamed to your-app-name"
 
-  cp .env .env.example
+  cp .env.example .env
   bundle
   rake db:migrate
-
