@@ -2,6 +2,16 @@
 
 Para facilitar la creacion de módulos para probar cosas y demás.
 
+== Branches
+
+=== authentication-only
+
+This branch has a vanilla aplication with no added assets, views or controllers.
+
+=== twitter-bootstrap
+
+This branch has a a home screen with views built on twitter-bootstrap
+
 == USAGE
 
 after cloning this repo run
@@ -24,3 +34,8 @@ after cloning this repo run
   cp .env.example .env
   bundle
   rake db:migrate
+
+== TODO
+
+  1. add a branch for webservices using RailsAPI.
+  2. turn all these branches into recipes for rails app generator
