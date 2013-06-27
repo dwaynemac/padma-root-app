@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def home
-    render text: 'welcome home'
+    render text: "welcome home #{current_user.username} from #{current_user.current_account.name} L: #{I18n.locale} TZ: #{Time.zone}"
   end
 
   private
