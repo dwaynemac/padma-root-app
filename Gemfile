@@ -18,11 +18,16 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
 
-  gem 'better_errors'
-  gem 'binding_of_caller'
 
   gem 'foreman'
   gem 'subcontractor', '~> 0.6.1'
+end
+
+group :development do
+  gem 'git-pivotal-tracker-integration'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do
